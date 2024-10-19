@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # Allow the action to write to the repository contents.
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
